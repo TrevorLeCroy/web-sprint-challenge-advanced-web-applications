@@ -26,8 +26,6 @@ const BubblePage = props => {
     console.log(editColor);
     axiosWithAuth().put(`http://localhost:5000/api/colors/${editColor.id}`, editColor)
       .then(res => {
-         console.log(res);
-
           /*
             I'm likely missing something here, but this is the first way I thought
             to handle the colors not updating immediately on the page
